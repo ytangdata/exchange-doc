@@ -133,6 +133,9 @@ GET transactions/exchange
 | ----------- | ---- |-------------  | ---------------------------- |
 | startDate   | 否   | String        | 开始日期，yyyyMMdd              |
 | endDate     | 否   | String        | 截止日期，yyyyMMdd              |
+| startTime   | 否   | Long          | 开始时间，时间戳                 |
+| endTime     | 否   | Long          | 截止时间，时间戳                 |
+| coinPair    | 否   | String        | 货币对，如：BTC/USDT            |
 | coin        | 否   | String        | 币种code                       |          
 | cursor      | 否   | String        | 游标                           |
 | size        | 否   | Integer       | 显示条数，10 - 100              |
@@ -143,6 +146,7 @@ GET transactions/exchange
     "data": {
         "items": [ 
             {
+                "id": "cursor_nZwExjwI1G",
                 "mobile": "+86.18018629787",
                 "coinPair": "BTC/USDT",
                 "type": "buy",
@@ -152,6 +156,7 @@ GET transactions/exchange
                 "time": 1567992209000
             },
             {
+                "id": "cursor_O8lBO9lcXg",
                 "mobile": "+86.18018629787",
                 "coinPair": "BTC/USDT",
                 "type": "buy",
@@ -161,6 +166,7 @@ GET transactions/exchange
                 "time": 1567990821000
             },
             {
+                "id": "cursor_yG1w9BYHmZ",
                 "mobile": "+86.15800919478",
                 "coinPair": "BTC/USDT",
                 "type": "sell",
