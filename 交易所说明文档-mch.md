@@ -38,7 +38,7 @@ service: mch
 }   (原生异常,其他报错)
 ```
 
-## 服务调用(默认端口号：8080)
+## 服务调用(运行ytangdata-service-call.jar，默认端口号：8080)
 
 ### 服务请求方法为GET时调用
 ```
@@ -89,12 +89,16 @@ POST mch/pay_to_customer
 | coin        | 是   | String | 币种code                      |
 | amount      | 是   | String | 数量                          |
 | comment     | 否   | String | 备注                          |
+| outOrderNo  | 是   | String | 外部订单号                     |
 
 #### 返回说明
 ```
 {
     "data": {
+        "id": "",
         "customer": "+86.15195805918",
+        "outOrderNo": "",
+        "orderType": "payout",
         "coin": "BTC",
         "amount": "0.1",
         "orderTs": 223344,
