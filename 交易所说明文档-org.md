@@ -382,7 +382,8 @@ GET transactions/exchange
                 "price": "11519.46",
                 "amount": "2.077732",
                 "fee": "0.00207773",
-                "time": 1567992209000
+                "time": 1567992209000,
+                "orderNo": ""
             },
             {
                 "id": "cursor_O8lBO9lcXg",
@@ -392,7 +393,8 @@ GET transactions/exchange
                 "price": "11519.46",
                 "amount": "0.0001",
                 "fee": "0.0000001",
-                "time": 1567990821000
+                "time": 1567990821000,
+                "orderNo": ""
             },
             {
                 "id": "cursor_yG1w9BYHmZ",
@@ -402,7 +404,8 @@ GET transactions/exchange
                 "price": "11519.46",
                 "amount": "102.7",
                 "fee": "0.1027",
-                "time": 1567569722000
+                "time": 1567569722000,
+                "orderNo": ""
             }, ...
         ],
         "hasNext": true,
@@ -423,6 +426,7 @@ GET transactions/exchange
 | time             | 时间                      |
 | hasNext          | 是否有下一条               |
 | nextCursor       | 游标(下一条的id)           |
+| orderNo          | 委托ID                    |
 
 ### 查询微盘交易报表（id倒序）
 ```
